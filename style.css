@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(218, 22%, 67%);
+}
+h2{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+.container,.upper-portion,.lower-portion,.left-portion,.right-portion{
+    display: flex;
+}
+.container{
+    margin: 8% 26%;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.upper-portion{
+    flex-direction: column;
+    flex: 100%;
+    padding: 5%;
+}
+.upper-portion>h3{
+    padding: 3% 0%;
+    color: hsl(71, 73%, 54%);
+    font-weight: 400;
+}
+.upper-portion>p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding-right: 8%;
+    color: hsl(218, 22%, 67%);
+}
+.lower-portion{
+    flex-direction: row;
+    line-height: 1.5;
+    color: #fff;
+}
+.left-portion,.right-portion{
+    flex-direction: column;
+    flex: 50%;
+    font-size: 16px;
+    padding: 5% 0% 5% 5%;
+}
+.left-portion{
+    padding-right: 8%;
+    background-color: hsl(179, 62%, 40%);
+}
+.right-portion{
+    padding-right: 12%;
+    background-color: hsl(179, 62%, 43%);
+}
+.heading{
+    padding-bottom: 8%;
+}
+span{
+    font-size: 35px;
+    font-weight: 700;
+}
+.price{
+    justify-content: center;
+    padding-bottom: 8%;
+}
+button{
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    font-weight: 400;
+    border-radius: 5px;
+    border-color: transparent;
+    box-shadow: 0px 2px 10px hsla(179, 62%, 30%, 0.9);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
