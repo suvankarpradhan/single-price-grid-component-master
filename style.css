@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Karla', sans-serif;
-    background-color: hsl(218, 22%, 67%);
+    background-color: hsl(204, 43%, 93%);
 }
 h2{
     color: hsl(179, 62%, 43%);
@@ -20,6 +20,7 @@ h2{
     background-color: #fff;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 0px 2px 10px hsl(218, 22%, 67%);
 }
 .upper-portion{
     flex-direction: column;
@@ -49,7 +50,7 @@ h2{
     padding: 5% 0% 5% 5%;
 }
 .left-portion{
-    padding-right: 8%;
+    padding-right: 6%;
     background-color: hsl(179, 62%, 40%);
 }
 .right-portion{
@@ -78,5 +79,39 @@ button{
     border-color: transparent;
     box-shadow: 0px 2px 10px hsla(179, 62%, 30%, 0.9);
 }
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .container{
+        margin: 20% 8%;
+    }
+    .upper-portion{
+        padding: 6%;
+    }
+    .left-portion,.right-portion{
+        padding: 6%;
+    }
+    .upper-portion>h3{
+        padding: 6% 0%;
+        font-weight: 700;
+    }
+    .upper-portion>p{
+        padding: 0%;
+    }
+    .lower-portion{
+        flex-direction: column;
+    }
+    .left-portion,.right-portion{
+        flex: 100%;
+    }
+    .right-portion{
+        padding-right: 28%;
+    }
+}
