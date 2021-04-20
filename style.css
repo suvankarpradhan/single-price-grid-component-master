@@ -63,6 +63,7 @@ h2{
 span{
     font-size: 35px;
     font-weight: 700;
+    vertical-align: middle;
 }
 .price{
     justify-content: center;
